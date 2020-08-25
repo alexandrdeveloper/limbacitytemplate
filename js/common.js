@@ -111,6 +111,29 @@ $(function() {
         }
     });
 
+	 let rubricActive = $('.rubric__item_active');
+	 let rubricActiveText = rubricActive.text();
+	 let rubricToggle = $('.rubric-mobile-toggle');
+	 let rubricList = $('.rubric__list');
+
+	 rubricToggle.text(rubricActiveText);
+
+
+
+	rubricToggle.on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('rubric-mobile-toggle_active');
+		rubricList.slideToggle(300);
+	})
+
+	$('.rubric-mobile-close').on('click', function() {
+		rubricList.slideUp(300);
+		rubricToggle.removeClass('rubric-mobile-toggle_active');
+	});
+
+
+	
+
 });
 	
 
