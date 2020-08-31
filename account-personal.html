@@ -437,10 +437,11 @@
 									<a href="#" class="account-panel__nav-item">Адрес</a>
 									<a href="#" class="account-panel__nav-item">Реквизиты</a>
 								</div>
-								<form action="#" class="account-panel__content account-form">
+								
+								<form action="#" class="account-panel__content account-form account-panel__content_visible">
 									<div class="account-form__group">
 										<label for="name">ФИО*</label>
-										<input type="text" id="name" placeholder="Иваненко Иван Иванович">
+										<input type="text" placeholder="Иваненко Иван Иванович">
 									</div>
 									<div class="account-form__checkbox-row">
 										<span>Кто вы?*</span>
@@ -458,22 +459,168 @@
 									</div>
 									<div class="account-form__group">
 										<label for="name">Почта*</label>
-										<input type="text" id="name" placeholder="info@limba.city">
+										<input type="text" placeholder="info@limba.city">
 									</div>
 									<div class="account-form__group">
 										<label for="name">Телефон*</label>
-										<input type="text" id="name" placeholder="+7 (3453) 12-10-99">
+										<input type="text" placeholder="+7 (3453) 12-10-99">
 									</div>
 									<div class="account-form__group">
 										<label for="name">Пароль</label>
-										<input type="text" id="name" placeholder="***********">
+										<input type="text" placeholder="***********">
 									</div>
 									<div class="account-form__button-row">
 										<a href="#" class="theme-btn">Изменить</a>
 										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
 									</div>
 								</form>
+								<form action="#" class="account-panel__content account-form">
+									<div class="account-form__group">
+										<label for="index">Основной телефон</label>
+										<input type="text" placeholder="+7 (3453) 12-10-99">
+									</div>
+									
+									<div class="account-form__group">
+										<label for="index">Дополнительный телефон</label>
+										<input type="text" placeholder="+7 (3453) 12-10-99">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Сайт</label>
+										<input type="text" placeholder="www.limba.city">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Viber</label>
+										<input type="text" placeholder="+7 (3453) 12-10-99">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Skype</label>
+										<input type="text" placeholder="limba.city">
+									</div>										
+									
+									<div class="account-form__button-row">
+										<a href="#" class="theme-btn">Изменить</a>
+										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
+									</div>
+								</form>
+								<form action="#" class="account-panel__content account-form ">
+									<div class="account-form__group">
+										<label for="index">Индекс</label>
+										<input type="text"  placeholder="125009">
+									</div>
+									<div class="account-form__group">
+										<label for="country">Страна</label>
+										<select name="location" id="country">
+											<option value="Где находитесь" disabled hidden selected>Не выбрано</option>
+											<option value="Где находитесь">Австрия</option>
+											<option value="Где находитесь">Германия</option>
+										</select>
+									</div>
+									<div class="account-form__group">
+										<label for="region">Регион</label>
+										<select name="location" id="region">
+											<option value="Где находитесь" disabled hidden selected>Не выбрано</option>
+											<option value="Где находитесь">Австрия</option>
+											<option value="Где находитесь">Германия</option>
+										</select>
+									</div>
+									<div class="account-form__group">
+										<label for="index">Город  / населенный пункт</label>
+										<input type="text"  placeholder="Москва">
+									</div>
+
+									<div class="account-form__address-row">
+										<div class="account-form__group">
+											<label for="index">Улица</label>
+											<input type="text"  placeholder="Тверская">
+										</div>
+										<div class="account-form__group">
+											<label for="index">Дом</label>
+											<input type="text"  placeholder="1">
+										</div>
+										<div class="account-form__group">
+											<label for="index">Корпус</label>
+											<input type="text"  placeholder="4">
+										</div>
+										<div class="account-form__group">
+											<label for="index">Офис</label>
+											<input type="text"  placeholder="13">
+										</div>
+									</div>
+									<div class="account-form__map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3482121291!2d36.82510136628262!3d55.581524357416235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1598897646035!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+									</div>
+									<div class="account-form__group">
+										<label for="index">Время работы</label>
+										<div class="account-form__time
+										">
+											<input type="text"  placeholder="08:00">
+											<span>-</span>
+											<input type="text"  placeholder="18:00">
+										</div>
+											
+									</div>
+									
+									
+									
+									<div class="account-form__button-row">
+										<a href="#" class="theme-btn">Изменить</a>
+										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
+									</div>
+								</form>
+								
+								<form action="#" class="account-panel__content account-form">
+									<div class="account-form__group">
+										<label for="index">Название</label>
+										<input type="text" placeholder="ООО Строймонтажэксперт">
+									</div>
+									
+									<div class="account-form__group">
+										<label for="index">ИНН</label>
+										<input type="text" placeholder=" 7719804363">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">КПП</label>
+										<input type="text" placeholder="325701001">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Банк</label>
+										<input type="text" placeholder="Сбербанк">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Кор/счет</label>
+										<input type="text" placeholder="">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">БИК*</label>
+										<input type="text" placeholder="">
+									</div>	
+
+									<div class="account-form__group">
+										<label for="index">Юридический адрес</label>
+										<input type="text" placeholder="">
+									</div>									
+									
+									<div class="account-form__button-row">
+										<a href="#" class="theme-btn">Изменить</a>
+										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
+									</div>
+
+									<div class="account-form__checkbox-row account-form__confirmation account-form__confirmation_left">
+										<input type="checkbox" id="confirmation">
+										<label for="confirmation">Я согласен с <a href="#">Политикой обработки персональных данных</a></label>
+									</div>
+								</form>
+								
+									
 							</div>
+
 						</div>
 					</div>
 				</div>
