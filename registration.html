@@ -47,7 +47,8 @@
 							</div>
 							<!-- /.header-top__call -->
 							<div class="header-top__authorise">
-								<a href="#" class="header-top__authorise-enter header-top__authorise-enter_logined"><img src="img/icons/user-01.svg" alt="user">Личный кабинет <b>(Роман)</b> </a>
+								<a href="#" class="header-top__authorise-enter"><img src="img/icons/user-01.svg" alt="user">Личный кабинет</a>
+								<a href="#" class="header-top__authorise-registration">Регистрация</a>
 
 							</div>
 							<!-- /.header-top__authorise -->
@@ -59,15 +60,17 @@
 
 					</div>
 					<!-- /.row -->
-					
-					<!-- /.authorise-form -->
-					<div class="account-manage">
-						<a href="#" class="account-manage__link">Личные данные</a>
-						<a href="#" class="account-manage__link">Управление заказами</a>
-						<a href="#" class="account-manage__link">Прайс-лист</a>
-						<a href="#" class="account-manage__link">Отзывы</a>
-						<a href="#" class="account-manage__link">Выйти</a>
-					</div>						
+					<form action="#" class="authorise-form">
+						<span>Войти в личный кабинет</span>
+						<input type="email" placeholder="Электронная почта">
+						<input type="password" placeholder="Пароль">
+						<div class="authorise-form__bottom">
+							<a href="#" class="authorise-form__forgot">Забыли пароль?</a>
+							<button type='submit'>Войти</button>
+						</div>
+						<!-- /.authorise-form__bottom -->
+					</form>
+					<!-- /.authorise-form -->						
 				</div>
 				<!-- /.container -->					
 			</div>
@@ -406,218 +409,129 @@
 		</div>
 
 		
-		<section class="account">
+		<section class="registration">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 section-title_left account__title">
-						<h2>Личный кабинет</h2>								
+					<div class="col-md-12 account__title">
+						<h2>Регистрация</h2>								
 					</div>
 									
 				</div>
 				<div class="row">
-					<div class="col-lg-3 col-md-12 account-sidebar">
-						<div class="account-sidebar__content account-control">
-							<a href="#" class="account-control__item account-control__item_active">Личные данные</a>
-							<a href="#" class="account-control__item">Управление заказами <span class="account-control__num">2</span></a>
-							<a href="#" class="account-control__item">Прайс-лист</a>
-							<a href="#" class="account-control__item">Отзывы</a>
-						</div>
-					</div>
-						<div class="col-lg-9 col-md-12 account-main">
-							<div class="account-main__content account-panel">
-								<div class="account-panel__head">
-									<span>Личные данные</span>
-								</div>
-								<div class="account-panel__nav">
-									<a href="#" class="account-panel__nav-item account-panel__nav-item_active">Основные</a>
-									<a href="#" class="account-panel__nav-item">Информация о магазине</a>
-									<a href="#" class="account-panel__nav-item">Адрес</a>
-									<a href="#" class="account-panel__nav-item">Реквизиты</a>
-								</div>
-								
-								<form action="#" class="account-panel__content account-form account-panel__content_visible">
-									<div class="account-form__group">
-										<label for="name">ФИО*</label>
-										<input type="text" placeholder="Иваненко Иван Иванович">
-									</div>
-									<div class="account-form__checkbox-row">
-										<span>Кто вы?*</span>
-										<input type="radio" id="individual" name="user">
-										<label for="individual">Частное лицо</label>
-										<input type="radio" id="company" name="user">
-										<label for="company">Юридическое лицо</label>
-									</div>
-									<div class="account-form__checkbox-row">
-										<span>Статус*</span>
-										<input type="radio" id="buier" name="seller">
-										<label for="buier">Покупатель</label>
-										<input type="radio" id="seller" name="seller">
-										<label for="seller">Продавец</label>
-									</div>
-									<div class="account-form__group">
-										<label for="name">Почта*</label>
-										<input type="text" placeholder="info@limba.city">
-									</div>
-									<div class="account-form__group">
-										<label for="name">Телефон*</label>
-										<input type="text" placeholder="+7 (3453) 12-10-99">
-									</div>
-									<div class="account-form__group">
-										<label for="name">Пароль</label>
-										<input type="text" placeholder="***********">
-									</div>
-									<div class="account-form__button-row">
-										<a href="#" class="theme-btn">Изменить</a>
-										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
-									</div>
-								</form>
-								<form action="#" class="account-panel__content account-form">
-									<div class="account-form__group">
-										<label for="index">Основной телефон</label>
-										<input type="text" placeholder="+7 (3453) 12-10-99">
-									</div>
-									
-									<div class="account-form__group">
-										<label for="index">Дополнительный телефон</label>
-										<input type="text" placeholder="+7 (3453) 12-10-99">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Сайт</label>
-										<input type="text" placeholder="www.limba.city">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Viber</label>
-										<input type="text" placeholder="+7 (3453) 12-10-99">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Skype</label>
-										<input type="text" placeholder="limba.city">
-									</div>										
-									
-									<div class="account-form__button-row">
-										<a href="#" class="theme-btn">Изменить</a>
-										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
-									</div>
-								</form>
-								<form action="#" class="account-panel__content account-form ">
-									<div class="account-form__group">
-										<label for="index">Индекс</label>
-										<input type="text"  placeholder="125009">
-									</div>
-									<div class="account-form__group">
-										<label for="country">Страна</label>
-										<select name="location" id="country">
-											<option value="Где находитесь" disabled hidden selected>Не выбрано</option>
-											<option value="Где находитесь">Австрия</option>
-											<option value="Где находитесь">Германия</option>
-										</select>
-									</div>
-									<div class="account-form__group">
-										<label for="region">Регион</label>
-										<select name="location" id="region">
-											<option value="Где находитесь" disabled hidden selected>Не выбрано</option>
-											<option value="Где находитесь">Австрия</option>
-											<option value="Где находитесь">Германия</option>
-										</select>
-									</div>
-									<div class="account-form__group">
-										<label for="index">Город  / населенный пункт</label>
-										<input type="text"  placeholder="Москва">
-									</div>
-
-									<div class="account-form__address-row">
-										<div class="account-form__group">
-											<label for="index">Улица</label>
-											<input type="text"  placeholder="Тверская">
-										</div>
-										<div class="account-form__group">
-											<label for="index">Дом</label>
-											<input type="text"  placeholder="1">
-										</div>
-										<div class="account-form__group">
-											<label for="index">Корпус</label>
-											<input type="text"  placeholder="4">
-										</div>
-										<div class="account-form__group">
-											<label for="index">Офис</label>
-											<input type="text"  placeholder="13">
-										</div>
-									</div>
-									<div class="account-form__map">
-										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3482121291!2d36.82510136628262!3d55.581524357416235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1598897646035!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-									</div>
-									<div class="account-form__group">
-										<label for="index">Время работы</label>
-										<div class="account-form__time
-										">
-											<input type="text"  placeholder="08:00">
-											<span>-</span>
-											<input type="text"  placeholder="18:00">
-										</div>
-											
-									</div>
-									
-									
-									
-									<div class="account-form__button-row">
-										<a href="#" class="theme-btn">Изменить</a>
-										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
-									</div>
-								</form>
-								
-								<form action="#" class="account-panel__content account-form">
-									<div class="account-form__group">
-										<label for="index">Название</label>
-										<input type="text" placeholder="ООО Строймонтажэксперт">
-									</div>
-									
-									<div class="account-form__group">
-										<label for="index">ИНН</label>
-										<input type="text" placeholder=" 7719804363">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">КПП</label>
-										<input type="text" placeholder="325701001">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Банк</label>
-										<input type="text" placeholder="Сбербанк">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Кор/счет</label>
-										<input type="text" placeholder="">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">БИК*</label>
-										<input type="text" placeholder="">
-									</div>	
-
-									<div class="account-form__group">
-										<label for="index">Юридический адрес</label>
-										<input type="text" placeholder="">
-									</div>									
-									
-									<div class="account-form__button-row">
-										<a href="#" class="theme-btn">Изменить</a>
-										<a href="#" class="theme-btn theme-btn_full">Сохранить</a>
-									</div>
-
-									<div class="account-form__checkbox-row account-form__confirmation account-form__confirmation_left">
-										<input type="checkbox" id="confirmation">
-										<label for="confirmation">Я согласен с <a href="#">Политикой обработки персональных данных</a></label>
-									</div>
-								</form>
-								
-									
+					<div class="col-12 registration-content">
+						<div class="registration-content__container">
+							<div class="registration-title">
+								<span class="registration-person">Физическое лицо </span>
+								<span>/</span>
+								<span class="registration-role"> Покупатель</span>
 							</div>
+							<form action="#" class="registration-form">
+								<div class="account-form__group">									
+									<input type="text" placeholder="ФИО*">
+								</div>
 
+								<div class="registration-form__checkbox-row ">
+									<span>Кто вы?</span>
+									<input type="radio" class="radio-person" value="personal" data-title="Физическое лицо" name="radio-person" id="radio-individual" checked>
+									<label for="radio-individual">Частное лицо</label>
+									<input type="radio" class="radio-person" value="entity" data-title="Юридическое лицо" name="radio-person" id="radio-entity">
+									<label for="radio-entity">Юридическое лицо</label>
+								</div>
+
+								<div class="registration-form__checkbox-row ">
+									<span>Статус*</span>
+									<input type="radio" class="radio-role" data-title="Покупатель" name="radio-role" id="radio-buyer" checked>
+									<label for="radio-buyer">Покупатель</label>
+									<input type="radio" class="radio-role" data-title="Продавец" name="radio-role" id="radio-seller">
+									<label for="radio-seller">Продавец</label>
+								</div>
+
+								<div class="account-form__group">									
+									<input type="text" placeholder="Почта*">
+								</div>
+
+								<div class="account-form__group">									
+									<input type="text" placeholder="Телефон*">
+								</div>
+
+								<div class="account-form__group">									
+									<input type="text" placeholder="Пароль*">
+								</div>
+								<div class="account-form__group">									
+									<input type="text" placeholder="Повторите пароль*">
+								</div>
+								<div class="registration-form__extra">
+									<div class="registration-form__extra-item registration-form__extra-item_visible registration-form__personal">
+										<div class="registration-title">										
+											<span>Подробные данные</span>
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Телефон магазина*">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Адрес магазина">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Название магазина*">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Почта*">
+										</div>
+									</div>
+
+									<div class="registration-form__extra-item registration-form__entity">
+										<div class="registration-title">										
+											<span>Подробные данные</span>
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Телефон магазина*">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Адрес магазина">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Название магазина*">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Название компании*">
+										</div>
+
+										<div class="account-form__group">									
+											<input type="text" placeholder="Почта*">
+										</div>
+									</div>
+								</div>
+
+									
+
+								<div class="account-form__checkbox-row account-form__confirmation account-form__confirmation_center account-form__confirmation_noaccent">
+									<input type="checkbox" id="confirmation">
+									<label for="confirmation">Я согласен с <a href="#">Политикой обработки персональных данных</a></label>
+								</div>
+								<div class="account-form__button-row">
+									
+									<button type="submit" class="theme-btn theme-btn_full">Подтвердить</button>
+								</div>
+							</form>
+							<div class="registration-social">
+								<span>Регистрация через аккаунт в социальной сети</span>
+								<div class="registration-social__list">
+									<a href="#" class="registration-social__link"><img src="img/icons/google_reg.svg" alt=""></a>
+									<a href="#" class="registration-social__link"><img src="img/icons/facebook_reg.svg" alt=""></a>
+									<a href="#" class="registration-social__link"><img src="img/icons/ok_reg.svg" alt=""></a>
+									<a href="#" class="registration-social__link"><img src="img/icons/twitter_reg.svg" alt=""></a>
+									<a href="#" class="registration-social__link"><img src="img/icons/yandex_reg.svg" alt=""></a>
+									<a href="#" class="registration-social__link"><img src="img/icons/vk_reg.svg" alt=""></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
