@@ -141,7 +141,8 @@ $(function() {
 	$(document).mouseup(function (e){ 
 		var div = $(".modal__window"); 
 		if (!div.is(e.target)
-		    && div.has(e.target).length === 0) {
+			&& div.has(e.target).length === 0
+			&& !div.classList.contains('modal_stable')) {
 			$('.modal').fadeOut(300);
 			$('body').removeClass('no-scroll');
 		}
@@ -272,6 +273,12 @@ $(function() {
 		verticalSwiping: true,
 		asNavFor: $('.product-slider__main'),
 		arrows: false,
+	});
+
+	let vacanciesSlider = $('.vacancies-list');
+
+	vacanciesSlider.slick({
+		slidesToShow: 1,
 	});
 
 
